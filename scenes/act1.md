@@ -6,9 +6,9 @@ SceneSetup.act1();
 
 (...300)
 
-n: AND THIS IS THE HUMAN'S ANXIETY
+n: ÉS EZ ITT AZ EMBER SZORONGÁSA
 
-n: _YOU_ ARE THE ANXIETY
+n: _TE_ VAGY A SZORONGÁS
 
 {{if window.localStorage.continueChapter=="replay"}}
 (#act1_replay)
@@ -24,17 +24,17 @@ n: _YOU_ ARE THE ANXIETY
 
 `hong({mouth:"0_neutral", eyes:"0_neutral"})`
 
-h: Oh hey! We're back here again?
+h: Ó, helló! Megint itt vagyunk?
 
 `hong({eyes:"0_neutral"})`
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n: A FELADATOD MEGVÉDENI AZ EMBERT A *VESZÉLYTŐL*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: IN FACT, REPLAYING THIS GAME IS PUTTING THEM IN *DANGER* RIGHT NOW
+n: IGAZÁBÓL A JÁTÉK ÚJRAJÁTSZÁSA MOST IS *VESZÉLYBE* SODORJA ŐT
 
-n: QUICK, WARN THEM!
+n: GYORSAN, FIGYELMEZTESD!
 
 ```
 sfx("squeak");
@@ -42,13 +42,13 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-b: Human! Listen, we're in danger! The player...
+b: Ember! Figyelj, veszélyben vagyunk! A játékos...
 
-[...is gonna torture us again!](#act1_replay_torture)
+[...újra kínozni fog minket](#act1_replay_torture)
 
-[...won't find an alternate ending!](#act1_replay_alternate)
+[...nem fog alternatív befejezést találni!](#act1_replay_alternate)
 
-[...will get ludonarrative dissonance!](#act1_replay_dissonance)
+[...ludonarratív disszonanciát fog kapni!](#act1_replay_dissonance)
 
 # act1_replay_torture
 
@@ -59,32 +59,32 @@ hong({body:"0_sammich"});
 ```
 
 {{if window.HACK_REPLAY.act1_ending=="fight"}}
-b: They'll make us curl up into a ball and cry!
+b: Összegömbölyítenek minket egy kis labdává és megríkatnak!
 {{/if}}
 
 {{if window.HACK_REPLAY.act1_ending=="flight"}}
-b: They'll make us kill your phone for giving you a panic attack!
+b: Megöletik velünk a telefonod, mert pánikrohamot okoz neked!
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="fight"}}
-b: They'll make us *NOT* punch the party host!
+b: *NEM* üttetik meg velünk a buli szervezőjét!
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="flight"}}
-b: They'll make us punch the Sympathetic Anti-Villain party host!
+b: Megüttetik velünk a buli Szimpatikus Antihős házigazdáját!
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="jump"}}
-h: Well at least we might not jump off the roof this ti--
+h: Legalább ezúttal lehet nem ugrunk le a te--
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="walkaway"}}
-b: THEY'LL MAKE US JUMP OFF THE ROOF.
+b: LEUGRASZTANAK MINKET A TETŐRŐL.
 {{/if}}
 
 `bb({body:"fear"});`
 
-b: ALL THESE NEW TERRIBLE THINGS WILL HAPPEN TO US, AND THEN WE'LL--
+b: AZ A SOK BORZASZTÓ DOLOG, AMIT VELÜNK TESZ MAJD, ÉS AZTÁN MI--
 
 (#act1_replay_end)
 
@@ -100,7 +100,7 @@ h: Sure, the story as a *whole* is the same, but each chapter has two possible e
 
 `bb({body:"fear"});`
 
-b: The player will be disappointed, close this browser tab, delete our software, and then we'll--
+b: A játékos csalódott lesz. Bezárja ezt a böngészőlapot, kitörli a programunkat, és aztán mi--
 
 (#act1_replay_end)
 
@@ -112,27 +112,27 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich"});
 ```
 
-h: A lewd-what now?
+h: Hogy lúd-micsodát?
 
 `bb({eyes:"normal"});`
 
-b: The story arc was about how you can *CHOOSE* to build a healthy collaboration with your fear,
+b: A történet arról szólt, hogy hogyan *DÖNTESZ* a félelmeddel való egészséges együttműködés mellett,
 
 `bb({eyes:"normal_right"});`
 
-b: But replaying the game will give the same story, implying your *CHOICES* don't matter,
+b: De a játék újrajátszása ugyanazt a történetet fogja mutatni, ezzel azt mutatva, hogy a *DÖNTÉSEID* nem számítanak,
 
 `bb({eyes:"narrow_eyebrow"});`
 
-b: Thus showing a contradiction between the game's message and mechanics,
+b: Ezáltal ellentmondásba keveredve a játék üzenete és játékmenete között,
 
 `bb({eyes:"fear"});`
 
-b: Thus unraveling the fabric of this narrative universe,
+b: Ezáltal lebontva ezen univerzum narratív szövetét,
 
 `bb({body:"fear"});`
 
-b: And then we'll--
+b: És aztán mi--
 
 (#act1_replay_end)
 
@@ -141,7 +141,7 @@ b: And then we'll--
 
 `bb({body:"panic"})`
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: MEGHALUUUUUUUUUUUUUNK
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -164,13 +164,13 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 hong({body:"0_sammich"});
 ```
 
-h: Okay let's get back into character.
+h: Oké, helyezkedjünk újra karakterbe.
 
 ```
 Game.clearText();
 ```
 
-n4: (LET _YOUR_ ANXIETY BLAH BLAH BLAH MOST SIMILAR TO WHAT _YOUR_ FEAR BLAH BLAH YOU KNOW THE DRILL)
+n4: (LEGYEN A _TE_ FÉLELMED BLA BLA BLA LEGHASONLÓBB A _TE_ FÉLELMEDHEZ BLA BLA ISMERED A JÁRÁST ERRE FELÉ)
 
 ```
 sfx("squeak");
@@ -186,17 +186,17 @@ bb({body:"squeeze"});
 
 `hong({mouth:"0_neutral", eyes:"0_annoyed"})`
 
-h: Oh good, my wolf's back. Faaaaantastic.
+h: Ó, jól van, a farkasom visszatért. Naaaaaagyszerű.
 
 `hong({eyes:"0_neutral"})`
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n: A FELADATOD MEGVÉDENI AZ EMBERED A *VESZÉLYTŐL*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: IN FACT, THAT SANDWICH IS PUTTING THEM IN *DANGER* RIGHT NOW
+n: IGAZÁBÓL AZ A SZENDVICS ÉPPEN MOST IS *VESZÉLYBE* SODORJA ŐT
 
-n: QUICK, WARN THEM!
+n: GYORSAN, FIGYELMEZTESD!
 
 ```
 sfx("squeak");
@@ -204,21 +204,21 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-b: Human! Listen, we're in danger! The danger is...
+b: Ember! Figyelj, veszélyben vagyunk! A veszély...
 
 `bb({body:"squeeze"})`
 
-n4: (LET _YOUR_ ANXIETY COME OUT TO PLAY! PICK WHAT'S MOST SIMILAR TO WHAT _YOUR_ FEAR TELLS YOU)
+n4: (HAGYD A _SAJÁT_ SZORONGÁSOD JÁTSZANI! VÁLASZD A _TE_ SZORONGÁSODHOZ LEGJOBBAN HASONLÍTÓ VÁLASZT)
 
 (#act1_normal_choice)
 
 # act1_normal_choice
 
-[We're eating alone for lunch! Again!](#act1a_alone) `bb({body:"squeeze_talk"})`
+[Egyedül ebédelünk! Már megint!](#act1a_alone) `bb({body:"squeeze_talk"})`
 
-[We're not productive while eating!](#act1a_productive) `bb({body:"squeeze_talk"})`
+[Ebéd közben nem vagyunk produktívak!](#act1a_productive) `bb({body:"squeeze_talk"})`
 
-[That white bread's bad for us!](#act1a_bread) `bb({body:"squeeze_talk"})`
+[A fehér kenyér rossz nekünk!](#act1a_bread) `bb({body:"squeeze_talk"})`
 
 # act1a_alone
 
@@ -227,7 +227,7 @@ bb({body:"normal", mouth:"small", eyes:"narrow"});
 hong({body:"0_sammich"});
 ```
 
-b: Don't you know loneliness is associated with premature death as much as smoking 15 cigarettes a day?-
+b: Nem tudtad, hogy a magányosságnak legalább annyi köze van a korai halálozáshoz, mint napi 15 cigarettának?-
 
 `Game.OVERRIDE_TEXT_SPEED = 2;`
 
@@ -237,17 +237,17 @@ b: (Holt-Lunstad 2010, PLoS Medicine)
 
 `hong({eyes:"0_annoyed"})`
 
-h: Um, thanks for citing your sources but--
+h: Öö, köszönöm a forrásmegjelölést, de--
 
 `Game.OVERRIDE_TEXT_SPEED = 2;`
 
 `bb({body:"fear", mouth:"normal", eyes:"fear"})`
 
-b: Which means if we don't hang out with someone *right now* we're gonna-
+b: Ami azt jelenti, hogy ha nem lógunk valakivel most azonnal, akkor-
 
 `bb({body:"panic"})`
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: MEGHALUUUUUUUUUUUUUNK
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -260,7 +260,7 @@ publish("hp_show");
 
 `_.fifteencigs = true`
 
-n: YOU USED *FEAR OF BEING UNLOVED*
+n: A *SZERETET HIÁNYÁTÓL VALÓ FÉLELMET* HASZNÁLTAD
 
 (#act1b)
 
@@ -271,27 +271,27 @@ bb({body:"normal", mouth:"small", eyes:"normal"});
 hong({body:"0_sammich"});
 ```
 
-b: Whip out your laptop and do some work right now!
+b: Kapd elő a laptopod és dolgozz egy kicsit!
 
 `hong({eyes:"0_annoyed"})`
 
-h: Um, I'd rather not get crumbs in my keyboa--
+h: Öö, nem igazán szeretnék morzsákat a billenty--
 
 ```
 bb({mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: If we're not contributing to the body of society then we're a society-parasite!
+b: Ha nem teszünk hozzá semmit a társadalomhoz, társadalom-paraziták vagyunk!
 
-b: The society-body will go to the society-doctor for medication to kill their society-parasites then we'll--
+b: A társadalom-test elmegy majd a társadalom-orvoshoz gyógyszerért, hogy megölje a társadalom-parazitáit, és akkor mi--
 
 ```
 bb({body:"panic", mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: MEGHALUUUUUUUUUUUUUNK
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -304,7 +304,7 @@ publish("hp_show");
 
 `_.parasite = true`
 
-n: YOU USED *FEAR OF BEING A BAD PERSON*
+n: *A ROSSZ SZEMÉLYÉ VÁLÁS FÉLELMÉT* HASZNÁLTAD
 
 (#act1b)
 
@@ -315,18 +315,18 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich", eyes:"0_annoyed"});
 ```
 
-h: Have those studies been replicat--
+h: Meg tudták ismételni ezeket a kuta--
 
 ```
 bb({body:"fear", mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Processed wheat will spike our blood sugar so they'll have to amputate all our limbs and then we'll-
+b: A feldolgozott búza megnöveli a vércukorszintünket, ezért amputálni kell majd az összes végtagunkat, és akkor mi-
 
 `bb({body:"panic"})`
 
-b: DIEEEEEEEEEEEEEEEEEEE
+b: MEGHALUUUUUUUUUUUUUNK
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
@@ -339,37 +339,37 @@ publish("hp_show");
 
 `_.whitebread = true`
 
-n: YOU USED *FEAR OF BEING HARMED*
+n: A *SÉRÜLÉSTŐL VALÓ FÉLELMET* HASZNÁLTAD
 
 (#act1b)
 
 # act1b
 
-n: IT'S SUPER EFFECTIVE
+n: SZUPERHATÉKONY
 
 `bb({mouth:"smile", eyes:"smile"});`
 
-b: See, human? I am your loyal guard-wolf!
+b: Látod, ember? Én vagyok a hűséges őrző-farkasod!
 
 `bb({body:"pride_talk"});`
 
-b: Trust your gut! Your feelings are always valid!
+b: Hallgass a megérzésedre! Az érzéseid mindig valósak!
 
 `bb({body:"pride"});`
 
-n: GET YOUR HUMAN'S ENERGY BAR TO ZERO
+n: VIDD AZ EMBERED ENRGIASZINTJÉT NULLÁRA
 
-n: TO PROTECT THEIR PHYSICAL + SOCIAL + MORAL NEEDS, YOU CAN USE:
+n: A FIZIKAI + SZOCIÁLIS + MORÁLIS IGÉNYEIK MEGVÉDÉSÉRE HASZNÁLHATOD:
 
-n: FEAR OF *BEING HARMED* #harm#
+n: A *SÉRÜLÉSTŐL* VALÓ FÉLELMET #harm#
 
-n: FEAR OF *BEING UNLOVED* #alone#
+n: A *SZERETET HIÁNYÁTÓL* VALÓ FÉLELMET #alone#
 
-n: AND FEAR OF *BEING A BAD PERSON* #bad#
+n: *A ROSSZ SZEMÉLYÉ VÁLÁS* FÉLELMÉT #bad#
 
 `Game.OVERRIDE_TEXT_SPEED = 1.25;`
 
-n4: (PRO-TIP: PLAY THE CHOICES THAT PERSONALLY HIT YOUR DEEPEST, DARKEST FEARS!~)
+n4: (PRO-TIP: VÁLASZD A SZEMÉLYES FÉLELMEIDET LEGJOBBAN ELTALÁLÓ LEHETŐSÉGEKET!~)
 
 h: ...
 
@@ -383,18 +383,18 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-h: you know what maybe it's time to check my phone.
+h: tudod mit, azt hiszem itt az ideje megnéznem a telefonomat.
 
 ```
 sfx("rustle2");
 hong({body:"phone1", mouth:"neutral", eyes:"neutral"})
 ```
 
-n: PROTECT YOUR HUMAN
+n: VÉDD MEG AZ EMEBERED
 
-n: FROM THE WORLD. FROM OTHER PEOPLE. FROM THEMSELF.
+n: A VILÁGTÓL. MÁS EMBEREKTŐL. MAGUKTÓL.
 
-n: GOOD LUCK
+n: SOK SIKERT
 
 (...500)
 
@@ -408,38 +408,38 @@ n: GOOD LUCK
 
 `music('battle', {volume:0.5})`
 
-n: ROUND ONE: *FIGHT!*
+n: ELSŐ KÖR: *HARC!*
 
 `bb({body:"normal", mouth:"normal", eyes:"normal"});`
 
-h: Huh. Facebook feed says there's a party happening this weekend.
+h: Hmm. A Facebook feed szerint lesz egy buli most hétvégén.
 
 `bb({eyes:"uncertain"});`
 
-b: Doesn't that weirdo throw a party *every* weekend?
+b: *Minden* héten tart egy bulit az különc, nem?
 
 `bb({eyes:"uncertain_right"});`
 
-b: What inner void are they trying to fill? They must be deeply messed up inside!
+b: Milyen belső űrt próbálhat betölteni? Nagyon el lehet rontva belül!
 
 `hong({eyes:"surprise"});`
 
-h: Also, I got an invite?
+h: Egyébként meg is hívtak?
 
 `bb({eyes:"fear", mouth:"normal"});`
 
-b: Well then!
+b: Na!
 
-[Say yes, or we'll die from loneliness!](#act1c_loner)
+[Mondj igent, különben belehalunk a magányba!](#act1c_loner)
 
-[Say no, it's full of poisonous drugs!](#act1c_drugs)
+[Mondj nemet, tele van mérgező drogokkal](#act1c_drugs)
 
-[Ignore it, we just make parties sad.](#act1c_sad)
+[Ne is törődj vele, úgyis csak elrontjuk a bulikat.](#act1c_sad)
 
 # act1c_loner
 
 {{if _.fifteencigs}}
-b: Fifteen cigarettes a day, human! Fifteen!
+b: Tizenöt cigaretta naponta, ember! Tizenöt!
 {{/if}}
 
 {{if !_.fifteencigs}}
@@ -447,11 +447,11 @@ b: Fifteen cigarettes a day, human! Fifteen!
 {{/if}}
 
 {{if !_.fifteencigs}}
-b: Then no one will show up at our funeral, they'll dump our ashes into the ocean, we get eaten by a whale,
+b: Aztán majd senki nem jön el a temetésünkre, beszórják a hamvainkat a tengerbe, megesz minket egy bálna,
 {{/if}}
 
 {{if !_.fifteencigs}}
-b: and we become WHALE POOP!
+b: és átváltozunk BÁNA KAKIVÁ!
 {{/if}}
 
 {{if !_.fifteencigs}} `_.whalepoop = true` {{/if}}
@@ -468,25 +468,25 @@ attack("18p", "alone");
 `bb({eyes:"normal"});`
 
 {{if !_.fifteencigs}}
-b: So yeah we should go to that party!
+b: Szóval ja, el kéne menned a buliba!
 {{/if}}
 
 {{if _.parasite}}
-b: Just bring the laptop so we can do work, and not be a society-parasite.
+b: Csak hozd a laptopot, hogy tudjunk dolgozni és ne legyünk társadalom-paraziták.
 {{/if}}
 
 {{if _.whitebread}}
-b: Just as long as they don't serve WHITE BREAD
+b: Csakis akkor, ha nem szolgálnak fel FEHÉR KENYERET
 {{/if}}
 
 `hong({mouth:"anger", eyes:"anger"});`
 
-h: GOD. If it'll make you shut up, fine.
+h: ISTENEM. Ha így végre befogod, legyen.
 
-h: I'll say yes.
+h: Igent mondok.
 
 {{if _.whalepoop}}
-b: Whale poop, human! Whale poop!
+b: Bálna kaki, ember! Bálna kaki!
 {{/if}}
 
 `_.partyinvite="yes"`
@@ -498,7 +498,7 @@ b: Whale poop, human! Whale poop!
 `bb({mouth:"small", eyes:"fear"});`
 
 {{if _.whitebread}}
-b: or even worse... WHITE BREAD
+b: vagy ami még rosszabb... FEHÉR KENYÉR
 {{/if}}
 
 {{if _.whitebread}}
@@ -506,11 +506,11 @@ b: or even worse... WHITE BREAD
 {{/if}}
 
 {{if _.whitebread}}
-b: We'll overdose on so much meth and white bread they won't be able to fit our fat corpse into the cremation furnace!
+b: Annyi meth-en és fehér kenyéren fogunk túladagolni, hogy a dagadt hullánk nem fog beférni a hamvasztó kemencébe!
 {{/if}}
 
 {{if !_.whitebread}}
-b: We'll overdose on so many drugs the undertaker will wonder how our body was *already* pre-embalmed!
+b: Annyi drogon fogunk túladagolni, a halál azon fog gondolkozni, hogyan lehetett a testünk már *előre* bebalzsamozva!
 {{/if}}
 
 ```
@@ -521,14 +521,14 @@ attack("18p", "harm");
 (...2500)
 
 {{if _.parasite}}
-b: Besides, can't party, we need to do work or we're a terrible society-parasite!
+b: Amúgysem bulizhatunk, többet kell dolgoznunk, hogy ne legyünk borzasztó társadalom-paraziták!
 {{/if}}
 
 `hong({mouth:"anger", eyes:"anger"});`
 
-h: GOD. If it'll make you shut up, fine.
+h: ISTENEM. Ha így végre befogod, legyen.
 
-h: I'll say no.
+h: Nemet mondok.
 
 `_.partyinvite="no"`
 
@@ -541,15 +541,15 @@ h: I'll say no.
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
 {{if _.fifteencigs}}
-b: All we ever do is cry in a corner about how loneliness is as deadly as 15 cigarettes a day.
+b: Folyton csak sírunk a sarokban, hogy a magényosság legalább olyan halálos, mint napi 15 cigaretta.
 {{/if}}
 
 {{if _.parasite}}
-b: All we ever do at parties is worry about how we should be productive instead.
+b: A bulikban úgyis csak folyron aggódunk, hogy inkább dolgoznunk kellene.
 {{/if}}
 
 {{if _.whitebread}}
-b: All we ever do is worry about how the unhealthy food options are going to kill us.
+b: Folyton csak amiatt aggódunk, hogy az egészségtelen étel választások meg fognak ölni minket.
 {{/if}}
 
 ```
@@ -557,19 +557,19 @@ bb({mouth:"normal", eyes:"normal"});
 hong({mouth:"neutral", eyes:"lookaway"});
 ```
 
-h: gee i wonder why.
+h: jaa, vajon miért.
 
 `hong({eyes:"neutral"});`
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-b: So if we go we'll make them feel bad, but if we reject their invite we'll also make them feel bad!
+b: Szóval ha elmegyünk, rosszul fogják érezni magukat, de ha elutasítjuk a meghívást, akkor is!
 
 `bb({body:"fear", eyes:"fear"});`
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
-b: ALL WE DO IS MAKE PEOPLE FEEL BAD, SO WE SHOULD FEEL BAD
+b: MINDIG ROSSZUL ÉRZIK MAGUKAT AZ EMBEREK MIATTUNK, NEKÜNK IS ROSSZUL KÉNE
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -580,9 +580,9 @@ attack("18p", "bad");
 
 `hong({mouth:"anger", eyes:"anger"});`
 
-h: Ugh. If it'll make you shut up, fine.
+h: Ahh. Ha így végre befogod, legyen.
 
-h: I'll ignore the invite.
+h: Nem foglalkozom a meghívóval.
 
 `_.partyinvite="ignore"`
 
@@ -595,19 +595,19 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 hong({mouth:"neutral", eyes:"annoyed"});
 ```
 
-h: Anyway. Facebook's too much. I need something calmer, less anxiety-producing.
+h: Egyébként is. A Facebook kicsit sok most. Valami nyugodtabb, kevésbé szorongáskeltő kell.
 
 `hong({eyes:"neutral"});`
 
-h: What's new on Twitter?
+h: Mi újság Twitter-en?
 
 `bb({eyes:"look"});`
 
-[Oh no, look at that horrible news story!](#act1d_news)
+[Jaj, ne, nézd azt a borzasztó újságcikket!](#act1d_news)
 
-[Oh no, is that tweet secretly about *us?*](#act1d_subtweet)
+[Jaj, ne, az a tweet titokban *rólunk* szól?](#act1d_subtweet)
 
-[Hey, a GIF of a cat drinking milk](#act1d_milk)
+[Hé, egy GIF egy tejet ivó cicáról](#act1d_milk)
 
 
 # act1d_news
@@ -617,14 +617,14 @@ bb({eyes:"pained1"});
 music(null, {fade:2});
 ```
 
-b: God, it feels like the world's burning, isn't it?
+b: Istenem, olyan, mint ha égne a világ, nem igaz?
 
 ```
 bb({eyes:"pained2"});
 hong({mouth:"sad", eyes:"sad"});
 ```
 
-b: It feels like it's all ending, like everything's dying and we're doomed and there's nothing we can do about it.
+b: Mint ha mindennek vége lenne, mint ha minden haldokolna, halálra lennénk ítélve, és semmit nem tehetünk ellene.
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 0.5;
@@ -635,7 +635,7 @@ b: ...
 
 `bb({mouth:"smile", eyes:"smile"});`
 
-b: Let's retweet that story!
+b: Retweet-eljük ezt a sztorit!
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -653,11 +653,11 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Okay I'll retweet it just please be quiet!
+h: Jó, retweet-elem, csak kérlek maradj csendben!
 
 `hong({mouth:"neutral", eyes:"annoyed"});`
 
-h: Screw it, let's look at Snapchat.
+h: Francba vele, nézzük a Snapchat-et.
 
 (#act1e)
 
@@ -666,35 +666,35 @@ h: Screw it, let's look at Snapchat.
 
 `bb({eyes:"fear"});`
 
-b: It's a subtweet! A sneaky, sneaky subtweet!
+b: Ez egy subtweet! Egy alattomos, bujkáló subtweet!
 
 `hong({eyes:"annoyed"});`
 
-h: It's probably not?
+h: Valószínűleg nem?
 
 `bb({eyes:"narrow", mouth:"small"});`
 
-b: but what if they're all talking behind our back
+b: de mi van, ha mind a hátunk mögött beszélnek
 
-h: They're n--
+h: De n--
 
 `bb({body:"fear", eyes:"fear", mouth:"normal"});`
 
-b: IN FRONT OF OUR BACK
+b: A HÁTUNK ELŐTT
 
 `hong({eyes:"sad", mouth:"sad"});`
 
-h: I d--
+h: Nem h--
 
 `bb({eyes:"narrow", mouth:"small"});`
 
-b: but *what if*
+b: de *mi van akkor*
 
-h: S--
+h: N--
 
 `bb({eyes:"narrow_eyebrow"});`
 
-b: *what if*
+b: *mi van akkor*
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 0.5;
@@ -719,7 +719,7 @@ hong({mouth:"anger", eyes:"annoyed"});
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: o-KAY, gonna try Snapchat.
+h: o-KÉ, megpróbálom a Snapchat-et.
 
 (#act1e)
 
@@ -727,7 +727,7 @@ h: o-KAY, gonna try Snapchat.
 
 `hong({mouth:"smile", eyes:"neutral"});`
 
-h: Heh ya that's cute, just retweeted it, I thi--
+h: Hah, ja, ez aranyos, épp retweet-eltem, szerin--
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -735,7 +735,7 @@ bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 1.8;
 ```
 
-b: CATS CAN'T DIGEST MILK AND WE'RE TERRIBLE PEOPLE FOR ENJOYING ANIMAL ABUSE
+b: A MACSKÁK NEM TUDJÁK MEGEMÉSZTENI A TEJET ÉS MIND SZÖRNYŰ EMBEREK VAGYUNK, MERT ÉLVEZZÜK AZ ÁLLATKÍNZÁST
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"fear"});
@@ -752,7 +752,7 @@ hong({mouth:"anger", eyes:"annoyed"});
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: o-KAY, gonna try Snapchat.
+h: o-KÉ, megpróbálom a Snapchat-et.
 
 (#act1e)
 
@@ -760,7 +760,7 @@ h: o-KAY, gonna try Snapchat.
 
 `hong({mouth:"neutral", eyes:"neutral"});`
 
-h: Huh, photos from yesterday night. So *that's* what those weekly parties are like.
+h: Hmm, tegnap esti fotók. Szóval *ilyenek* azok a heti bulik.
 
 {{if _.partyinvite=="yes"}} (#act1e_said_yes) {{/if}}
 
@@ -772,29 +772,29 @@ h: Huh, photos from yesterday night. So *that's* what those weekly parties are l
 
 `hong({mouth:"sad", eyes:"annoyed"});`
 
-h: Oof, looks way too crowded for my anxiety.
+h: Auh, túl zsúfoltnak tűnik a szorongásomhoz.
 
-h: Maybe I shouldn't have said yes to the invite?
+h: Talán nem kellett volna elfogadnom a meghívást?
 
 ```
 hong({mouth:"neutral", eyes:"neutral"});
 bb({mouth:"normal", eyes:"normal"});
 ```
 
-[Change our answer? Like a jerk?!](#act1e_yes_dontchange)
+[Változtassunk a válaszunkon? Mint valami bunkó?!](#act1e_yes_dontchange)
 
-[Change our answer! It's too crowded!](#act1e_yes_changetono)
+[Változtassunk a válaszunkon! Túl zsúfolt!](#act1e_yes_changetono)
 
 {{if _.subtweet}}
-[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+[Igen, tuti subtweet-eltek minket.](#act1e_ignore_subtweet)
 {{/if}}
 
 {{if _.badnews}}
-[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+[Várj, a tények ellenőrzése nélkül retweet-eltünk.](#act1e_ignore_factcheck)
 {{/if}}
 
 {{if (!_.subtweet && !_.badnews)}}
-[You know, you've got really bad posture?](#act1e_ignore_posture)
+[Tudtad, hogy nagyon rossz a testtartásod?](#act1e_ignore_posture)
 {{/if}}
 
 # act1e_yes_dontchange
@@ -804,14 +804,14 @@ bb({eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: They were counting on us to come and now we're betraying their trust? Do you wanna die alone?!
+b: Számítottak rá, hogy megyünk, mi meg csak így cserben hagyjuk őket? Egyedül akarsz meghalni?!
 
 {{if _.fifteencigs}}
-b: FIFTEEN. CIGARETTES.
+b: TIZENÖT. CIGARETTA.
 {{/if}}
 
 {{if _.whalepoop}}
-b: WHALE. POOP.
+b: BÁLNA. KAKI.
 {{/if}}
 
 ```
@@ -826,7 +826,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Shut up shut up I'll keep it as yes!
+h: Fogd be fogd be mégis megyek!
 
 (#act1f)
 
@@ -837,7 +837,7 @@ bb({eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Don't you know about human stampedes?
+b: Nem hallottál a tömegpánikokról?
 
 ```
 bb({body:"fear", mouth:"small", eyes:"narrow"});
@@ -845,7 +845,7 @@ hong({eyes:"sad", mouth:"sad"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: In 2003 a Rhode Island nightclub had a fire and the panic made people jam the exits so 100 people burned to death-
+b: 2003-ban egy Rhode Island-i klubban tűz ütött ki, az emberek pedig a pánik miatt elakadtak a kijáratoknál, így 100 ember égett halálra-
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"fear"});
@@ -853,14 +853,14 @@ hong({mouth:"shock"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: DO YOU WANT THAT TO HAPPEN TO US-
+b: AZT AKAROD, HOGY VELÜNK IS EZ LEGYEN-
 
 ```
 bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 2.5;
 ```
 
-b: SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY NO SAY N-
+b: MONDJ NEMET MONDJ NEMET MONDJ NEMET MONDJ NEMET MONDJ N-
 
 
 ```
@@ -876,7 +876,7 @@ hong({eyes:"anger", mouth:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Shut up shut up I'll change my answer to no! God!
+h: Fogd be fogd be nemet mondok! Jó ég!
 
 (#act1f)
 
@@ -884,35 +884,35 @@ h: Shut up shut up I'll change my answer to no! God!
 
 `hong({mouth:"sad", eyes:"sad"});`
 
-h: Hm... that looks really fun.
+h: Hm... nagyon szórakoztatónak tűnik.
 
-h: Maybe I shouldn't have said no to the invite?
+h: Lehet nem kellett volna elutasítanom a meghívást.
 
 `bb({mouth:"normal", eyes:"normal"});`
 
-[Change our answer? Like a jerk?!](#act1e_no_dontchange)
+[Változtassunk a válaszunkon? Mint valami bunkó?!](#act1e_no_dontchange)
 
-[Change our answer! Don't die alone!](#act1e_no_changetoyes)
+[Változtassunk a válaszunkon! Ne haljunk meg egyedül!](#act1e_no_changetoyes)
 
 {{if _.subtweet}}
-[Yeah they were totally subtweeting us.](#act1e_ignore_subtweet)
+[Igen, tuti subtweet-eltek minket.](#act1e_ignore_subtweet)
 {{/if}}
 
 {{if _.badnews}}
-[Wait we retweeted without fact-checking.](#act1e_ignore_factcheck)
+[Várj, a tények ellenőrzése nélkül retweet-eltünk.](#act1e_ignore_factcheck)
 {{/if}}
 
 {{if (!_.subtweet && !_.badnews)}}
-[You know, you've got really bad posture?](#act1e_ignore_posture)
+[Tudtad, hogy nagyon rossz a testtartásod?](#act1e_ignore_posture)
 {{/if}}
 
 # act1e_no_dontchange
 
 `bb({eyes:"anger"})`
 
-b: Everybody was counting on us!
+b: Mindenki számított ránk!
 
-b: ...to leave them alone and let them have a nice party without a horrible disgusting {{if _.whitebread}}white-bread-munching{{/if}} creep like u--
+b: ...egyedül hagyni őket egy kellemes buliban egy ilyen borzasztó, undorító{{if _.whitebread}}, fehér kenyér zabáló{{/if}} különc nélkül, mint te--
 
 
 ```
@@ -928,7 +928,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Shut up shut up I'll keep it as no!
+h: Fogd be fogd be nem megyek el!
 
 (#act1f)
 
@@ -939,7 +939,7 @@ bb({body:"fear", eyes:"fear", mouth:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Chronic loneliness increases our cortisol levels as well as risk for cardiovascular disease and stroke!
+b: A krónikus magány megnöveli a kortizol szintet, a szív- és érrendszeri megbetegedések és a stroke kockázatát!
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -949,7 +949,7 @@ attack("18p", "harm");
 (...2500)
 
 {{if _.fifteencigs}}
-b: FIFTEEN. CIGARETTES.
+b: TIZENÖT. CIGARETTA.
 {{/if}}
 
 ```
@@ -958,7 +958,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Shut up shut up I'll change my answer to yes! God!
+h: Fogd be fogd be mégis elmegyek! Jó ég!
 
 (#act1f)
 
@@ -969,14 +969,14 @@ bb({eyes:"fear", mouth:"small"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: All our problematic tweets have come back to roost!
+b: Az összes problémás tweet-ünk visszatért kísérteni!
 
 ```
 bb({body:"fear", eyes:"fear", mouth:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.7;
 ```
 
-b: We're gonna get called out and cancelled and dragged with a rope on horseback down the information superhighway!
+b: Ránk fognak szólni és bojkottálni fognak minket és ló mögé kötve végighúznak minket az információs szupersztrádán!
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -991,7 +991,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Why are you like this?!
+h: Miért vagy ilyen?!
 
 (#act1f)
 
@@ -1002,14 +1002,14 @@ bb({eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: We're spreading disinformation! We're destroying trust in a free press!
+b: Valótlanságot terjesztünk! Elpusztítjuk a bizalmat a szabad médiában!
 
 ```
 bb({body:"scream"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: We're the reason fascism will arise from the rubble of democracy!
+b: Miattunk fog a demokrácia romjaiból a fasizmus felemelkedni!
 
 ```
 bb({body:"normal", eyes:"anger"});
@@ -1025,7 +1025,7 @@ Game.OVERRIDE_TEXT_SPEED = 1.5;
 _.factcheck = true;
 ```
 
-h: Why are you like this?!
+h: Miért vagy ilyen?!
 
 (#act1f)
 
@@ -1036,13 +1036,13 @@ bb({eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Do you want to have a pretzel for a spine?! Stop hunching over your screen!
+b: Szeretnél perec alakú gerincet?! Elég lesz a képernyő fölött gubbasztásból!
 
 ```
 bb({body:"meta"});
 ```
 
-b: That means you too.
+b: És ez rád is igaz.
 
 ```
 bb({body:"normal", mouth:"normal"});
@@ -1058,7 +1058,7 @@ hong({mouth:"anger", eyes:"anger"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-h: Why are you like this?!
+h: Miért vagy ilyen?!
 
 (#act1f)
 
@@ -1066,27 +1066,27 @@ h: Why are you like this?!
 
 `hong({mouth:"sad", eyes:"sad"});`
 
-h: Hm... that looks really fun.
+h: Hm... nagyon szórakoztatónak tűnik.
 
-h: Maybe I shouldn't have ignored the invite?
+h: Lehet nem kellett volna figyelmen kívül hagyni a meghívást?
 
 `bb({mouth:"normal", eyes:"normal"});`
 
-[Keep ignoring, we're still party poopers.](#act1e_ignore_continue)
+[Hagyd csak, még mindig elrontjuk a bulikat.](#act1e_ignore_continue)
 
-[Actually, say yes.](#act1e_ignore_changetoyes)
+[Igazából mondj igent.](#act1e_ignore_changetoyes)
 
-[Actually, say no.](#act1e_ignore_changetono)
+[Igazából mondj nemet.](#act1e_ignore_changetono)
 
 # act1e_ignore_continue
 
 `hong({eyes:"annoyed"});`
 
-h: It's kinda rude to keep ignoring them though, no?
+h: Elég szemmét dolog továbbra is figyelmen kívül hagyni őket, nem?
 
 `bb({eyes:"normal_right"});`
 
-b: Well other people always ignore *us*, so
+b: A többiek úgyis mindig figyelmen kívül hagynak *minket*, szóval
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -1097,7 +1097,7 @@ attack("18p", "alone");
 
 `bb({eyes:"normal"});`
 
-b: so let's just call it even.
+b: szóval azt hiszem kvittek vagyunk.
 
 (#act1f)
 
@@ -1105,9 +1105,9 @@ b: so let's just call it even.
 
 `hong({eyes:"surprise", mouth:"smile"});`
 
-h: You're... letting me have fun?
+h: Hagyod... hogy szórakozzak?
 
-b: Well, I mean, loneliness *can* kill us.
+b: Végülis, a magyányosság *képes* megölni minket.
 
 `hong({eyes:"neutral", mouth:"neutral"});`
 
@@ -1117,7 +1117,7 @@ b: Well, I mean, loneliness *can* kill us.
 
 `bb({eyes:"narrow"});`
 
-b: It's too crowded. Crowds are dangerous.
+b: Túl zsúfolt. A tömmegek veszélyesek.
 
 (#act1e_yes_changetono)
 
@@ -1129,60 +1129,60 @@ hong({mouth:"neutral", eyes:"neutral"});
 bb({body:"normal", mouth:"normal", eyes:"normal"});
 ```
 
-h: Whatever. New Tinder notification.
+h: Tökmindegy. Új Tinder értesítés.
 
 `bb({eyes:"uncertain"})`
 
-b: What, that hookup app?
+b: Mi, az az egyéjszakás kereső?
 
 `hong({eyes:"annoyed"})`
 
-h: It's not a hookup app, it's just a way to meet new peopl--
+h: Nem egyéjszakás kereső, csak lehetőség új embere--
 
 `bb({eyes:"narrow"})`
 
-b: It's a hookup app.
+b: Egy egyéjszakás kereső.
 
 ```
 hong({eyes:"surprise", mouth:"smile"});
 bb({eyes:"normal"});
 ```
 
-h: Oh, I got a match! They look cute!
+h: Oh, lett egy találatom! Jól néz ki!
 
 ```
 bb({eyes:"narrow_eyebrow"});
 hong({eyes:"sad", mouth:"anger"})
 ```
 
-h: Please don't ruin this for m--
+h: Kérlek ne rontsd el ezt neke--
 
 ```
 bb({body:"panic"});
 Game.OVERRIDE_TEXT_SPEED = 2.0;
 ```
 
-b: DANGER DANGER DANGER DANGER DANGER DANGER
+b: VESZÉLY VESZÉLY VESZÉLY VESZÉLY VESZÉLY VESZÉLY
 
 `bb({body:"fear", eyes:"fear", mouth:"normal"})`
 
-[We're being *used* by other people.](#act1f_used_by_others)
+[A többi ember *kihasznál* minket.](#act1f_used_by_others)
 
-[We're just *using* other people.](#act1f_using_others)
+[Csak *kihasználjuk* az embereket.](#act1f_using_others)
 
-[YOUR MATCH IS A SERIAL KILLER](#act1f_killer)
+[A TALÁLATOD EGY SOROZATGYILKOS](#act1f_killer)
 
 # act1f_used_by_others
 
 `bb({body:"point_crotch", eyes:"normal", mouth:"normal"})`
 
-b: Random hookups may be able to fill the hole down there,
+b: Az egyéjszakás kalandok betölthetik a lyukat ott lent,
 
-b: but they can never fill the hole...
+b: de soha nem töltherik be a lyukat...
 
 `bb({body:"point_heart", eyes:"pretty", mouth:"small"})`
 
-b: in *here*.
+b: *itt bent*.
 
 (...1000)
 
@@ -1191,7 +1191,7 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: The point is WE'RE GOING TO DIE ALONE
+b: A lényeg, hogy EGYEDÜL FOGUNK MEGHALNI
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -1208,7 +1208,7 @@ attack("18p", "alone");
 
 `bb({eyes:"narrow", mouth:"small"})`
 
-b: You think other people's genitals are Pokémon for us to collect?
+b: Neked más emberek nemi szervei csak gyűjteni való Pokémonok?
 
 ```
 bb({body:"sing", eyes:"pretty", mouth:"shut"});
@@ -1222,7 +1222,7 @@ Game.FORCE_TEXT_DURATION = 1000;
 Game.FORCE_NO_VOICE = true;
 ```
 
-b: ♫ (pokemon theme song)-
+b: ♫ (Pokémon főcímdal)-
 
 (...5600)
 
@@ -1231,7 +1231,7 @@ bb({mouth:"normal"});
 Game.FORCE_TEXT_DURATION = 2400;
 ```
 
-b: ♫ I wanna be, the ^slut^ti-est-
+b: ♫ A célom, hogy ^ribanc^ legyek-
 
 (...500)
 
@@ -1240,7 +1240,7 @@ bb({eyes:"narrow", mouth:"small"});
 Game.FORCE_TEXT_DURATION = 2100;
 ```
 
-b: ♫ Like no one ever was-
+b: ♫ Mindig más oldalán-
 
 (...1500)
 
@@ -1249,7 +1249,7 @@ bb({eyes:"pretty"});
 Game.FORCE_TEXT_DURATION = 2300;
 ```
 
-b: ♫ Thighs n' ^ass^, voluptuous breast-
+b: ♫ Oly sok a ^fasz^, a mell, a ^segg^-
 
 (...500)
 
@@ -1258,7 +1258,7 @@ bb({eyes:"fear", mouth:"normal"});
 Game.FORCE_TEXT_DURATION = 2000;
 ```
 
-b: ♫ with sweaty ^dick^ and balls!-
+b: ♫ de sok-sok ^szex^ vár ránk!-
 
 (...1000)
 
@@ -1267,7 +1267,7 @@ bb({eyes:"smile", mouth:"smile"});
 Game.FORCE_TEXT_DURATION = 1000;
 ```
 
-b: ♫ PERVY-MON! GOTTA CA-
+b: ♫ LOTYÓ-MON! SZEREZD ME-
 
 ```
 Game.FORCE_CANT_SKIP = false;
@@ -1277,7 +1277,7 @@ bb({body:"normal", mouth:"normal", eyes:"normal"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: The point is we're a manipulative creep.
+b: A lényeg, hogy manipulatív különcök vagyunk.
 
 ```
 hong({mouth:"shock", eyes:"shock"});
@@ -1295,19 +1295,19 @@ attack("18p", "bad");
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
 {{if _.whitebread}}
-b: They'll trap you in a well and force-feed you white bread to fatten you up so they can wear your skin like a suit!
+b: Foglyul ejtenek egy kútban és addig etetnek fehér kenyérrel, míg a hízás miatt a bőrödet ruhaként nem tudják hordani!
 {{/if}}
 
 {{if _.parasite}}
-b: They'll bludgeon you with a pomodoro timer and say "YOU SHOULDA BEEN MORE PRODUCTIVE YOU PARASITE"
+b: Azt mondják majd: "PRODUKTÍVABBNAK KELLETT VOLNA LENNED, TE PARAZITA", és betörik a fejed egy pomodoro órával.
 {{/if}}
 
 {{if !_.whitebread && !_.parasite}}
-b: They'll tear your flesh to gory confetti, turn your entrails into streamers, and mix your blood into a punch bowl!
+b: Undi konfettivé tépik a húsod, a beleidből szalagokat csinálnak, a véredet pedig bekeverik puncsnak!
 {{/if}}
 
 {{if !_.whitebread && !_.parasite}}
-b: How's THAT for a party invite?!
+b: Jó lesz EZ meghívásnak?!
 {{/if}}
 
 ```
@@ -1334,44 +1334,44 @@ h: ...
 
 (...500)
 
-h: i'm so sick of this game.
+h: úgy unom már ezt a játékot.
 
 (...700)
 
 `Game.OVERRIDE_TEXT_SPEED = 1.5;`
 
 h:
-{{if _.fifteencigs}}"loneliness will kill us"... {{/if}}
-{{if _.parasite}}"we're a society-parasite"... {{/if}}
-{{if _.whitebread}}"don't eat that, it'll kill us"... {{/if}}
-{{if _.subtweet}}"they're talking behind our back"... {{/if}}
-{{if _.badnews}}"the world is burning"... {{/if}}
-{{if _.hookuphole}}"we'll die alone"... {{/if}}
-{{if _.serialkiller}}"they're a serial killer"... {{/if}}
-{{if _.catmilk}}"cats can't digest milk"... {{/if}}
-{{if _.pokemon}}a ^crappy^ parody song... {{/if}}
+{{if _.fifteencigs}}"a magányosság megöl minket"... {{/if}}
+{{if _.parasite}}"társadalom-paraziták vagyunk"... {{/if}}
+{{if _.whitebread}}"ne edd meg azt, meg fog ölni minket"... {{/if}}
+{{if _.subtweet}}"a hátunk mögött beszélnek"... {{/if}}
+{{if _.badnews}}"a világ lángol"... {{/if}}
+{{if _.hookuphole}}"egyedül fogunk meghalni"... {{/if}}
+{{if _.serialkiller}}"ő egy sorozatgyilkos"... {{/if}}
+{{if _.catmilk}}"a tej rosszat tesz a macskáknak"... {{/if}}
+{{if _.pokemon}}egy ^szar^ paródia dal... {{/if}}
 
-h: i just want to live my life.
+h: csak élni akarom az életem.
 
-h: i just want to be free from all this... pain.
+h: csak meg akarok szabdulni ettől... a fájdalomtól.
 
 `bb({eyes:"look_sad"});`
 
-b: Hey... human...
+b: Hé... ember...
 
 `Game.OVERRIDE_TEXT_SPEED = 0.5;`
 
-b: It'll be okay.
+b: Minden rendben lesz.
 
 (...600)
 
 `bb({body:"point_heart", eyes:"look_sad_smile", mouth:"smile"});`
 
-b: As your loyal guard-wolf, I'll always keep an eye out for danger, and do my best to keep you safe.
+b: Mint hűséges védő-farkasod, mindig figyelek a veszélyekre és minden tőlem telhetőt megteszek, hogy megvédjelek.
 
 `bb({body:"normal", eyes:"look_sad", mouth:"smile"});`
 
-b: I promise.
+b: Megígérem.
 
 (...600)
 
@@ -1380,29 +1380,29 @@ bb({body:"normal", eyes:"normal", mouth:"normal"});
 hong({body:"phone1", eyes:"neutral", mouth:"neutral"});
 ```
 
-h: Last app. Instagram. What you got?
+h: Utolsó app. Instagram. Mid van?
 
 `hong({eyes:"sad"});`
 
-h: It's... more party pictures.
+h: Még több... buli kép.
 
 `hong({mouth:"sad"});`
 
-h: Everyone looks so happy. Free from worry. Free from anxiety.
+h: Mindenki olyan boldognak tűnik. Nem aggódnak. Nem szoronganak.
 
 `hong({mouth:"anger"});`
 
-h: God, why can't I be like them? Why can't I just be *normal?*
+h: Istenem, miért nem lehetek olyan, mint ők? Miért nem lehetek egyszerűen *normális?*
 
 `bb({eyes:"normal_right"});`
 
-b: Speaking of parties, about this weekend's invite. Here's my FINAL decision:
+b: Ami a bulikat illeti, döntsünk a hétvégi meghívásról. Itt a végleges döntésem:
 
 `bb({eyes:"normal"});`
 
-[We should go.](#act1g_go) `Game.OVERRIDE_CHOICE_LINE=true`
+[El kéne mennünk.](#act1g_go) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[We should not go.](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
+[Nem kéne mennünk.](#act1g_dont) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act1g_go
 
@@ -1418,39 +1418,39 @@ b: Speaking of parties, about this weekend's invite. Here's my FINAL decision:
 
 # act1h
 
-b: We sh--
+b: Szerint--
 
 ```
 bb({eyes:"wat", mouth:"small"});
 hong({body:"2_fuck"});
 ```
 
-h: *^FUCK^.*
+h: *^BASZD^.*
 
 `hong({body:"2_you"});`
 
-h: YOU.
+h: MEG.
 
 (...500)
 
-b: w
+b: m
 
 (...1500)
 
 `bb({eyes:"wat_2"});`
 
-b: wha?
+b: mi?
 
 `hong({body:"phone1", eyes:"anger", mouth:"anger"});`
 
-h: I'm going to say YES to that party,
+h: IGENT fogok mondani a bulira,
 
 {{if _.act1g=="go"}}
-h: NOT because you want me to, but because *I* want to.
+h: NEM azért, mert te azt szeretnéd, hanem mert *ÉN* akarom.
 {{/if}}
 
 {{if _.act1g=="dont"}}
-h: Precisely BECAUSE you don't want me to.
+h: Pontosan azért, MERT te nem szeretnéd.
 {{/if}}
 
 ```
@@ -1458,14 +1458,14 @@ hong({body:"putaway"});
 sfx("rustle");
 ```
 
-h: You're NOT in control of me.
+h: NEM te irányítasz.
 
 ```
 sfx("rustle2");
 hong({body:"0_sammich", eyes:"0_annoyed", mouth:"0_neutral"});
 ```
 
-h: Now excuse me while I eat this delicious sandwich in ^goddamn^ peace.
+h: És most bocsáss meg, békében meg fogom enni ezt a ^kurva^ szendvicset.
 
 `hong({body:"2_sammich_eat"});`
 
@@ -1503,11 +1503,11 @@ b: ..................
 
 `bb({mouth:"normal"});`
 
-[AHHHH WE'RE GONNA DIE](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
+[ÁÁÁÁÁ MEG FOUNK HALNI](#act1h_death) `Game.OVERRIDE_CHOICE_LINE = true;`
 
-[AHHHH EVERYONE HATES US](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
+[ÁÁÁÁÁ MINDENKI UTÁL MINKET](#act1h_loneliness) `Game.OVERRIDE_CHOICE_LINE = true;`
 
-[AHHHH WE'RE HORRIBLE PEOPLE](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
+[ÁÁÁÁÁ BORZASZTÓ EMBEREK VAGYUNK](#act1h_worthless) `Game.OVERRIDE_CHOICE_LINE = true;`
 
 # act1h_death
 
@@ -1516,7 +1516,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH WE'RE GONNA DIE AAAAAAHHHHHHH
+b: ÁÁÁÁÁ MEG FOGUNK HALNI ÁÁÁÁÁÁÁÁÁÁÁÁÁ
 
 ```
 hong({body:"3_defeated1"});
@@ -1534,7 +1534,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH EVERYONE HATES US AAAAAAHHHHHHH
+b: ÁÁÁÁÁ MINDENKI UTÁL MINKET ÁÁÁÁÁÁÁÁÁÁÁÁÁ
 
 ```
 hong({body:"3_defeated1"});
@@ -1552,7 +1552,7 @@ bb({body:"fear"});
 Game.OVERRIDE_TEXT_SPEED = 3;
 ```
 
-b: AHHHH WE'RE HORRIBLE PEOPLE AAAAAAHHHHHHH
+b: ÁÁÁÁÁ BORZASZTÓ EMBEREK VAGYUNK ÁÁÁÁÁÁÁÁÁÁÁÁÁ
 
 ```
 hong({body:"3_defeated1"});
@@ -1570,39 +1570,39 @@ bb({mouth:"smile_lock", eyes:"smile", body:"normal"});
 music('battle', {volume:0.5});
 ```
 
-n: CONGRATULATIONS
+n: GRATULÁLUNK
 
 (...500)
 
-n: YOU'VE SUCCESSFULLY PROTECTED YOUR HUMAN'S PHYSICAL + SOCIAL + MORAL NEEDS
+n: SIKERESEN MEGVÉDTED AZ EMBERED FIZIKAI + SZOCIÁLIS + MORÁLIS IGÁNYEIT
 
-n: WHY, LOOK HOW GRATEFUL THEY ARE!
+n: NÉZDD, MILYEN HHÁLÁS ÉRTE!
 
 (...500)
 
-n: NOW THAT THEIR ENERGY IS ZERO, YOU CAN DIRECTLY CONTROL THEIR ACTIONS
+n: MOST, HOGY AZ ENERGIÁJA NULLÁN VAN, KÖZVETLENÜL BEFOLYÁSOLHATOD A CSELEKEDETEIT
 
 `bb({mouth:"smile", eyes:"normal"});`
 
-n: PICK YOUR ENDING MOVE
+n: VÁLASZD KI A VÉGSŐ LÉPÉSED
 
 `bb({mouth:"small_lock", eyes:"fear"});`
 
-n: *FINISH THEM*
+n: *VÉGEZZ VELE*
 
-[{FIGHT: Punish your stressful phone!}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
+[{HARC: Büntesd meg a stresszt okozó telefont!}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[{FLIGHT: Curl up in a ball and cry!}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
+[{MENEKÜLÉS: Gömbölyödj labdává és sírj!}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act1i_phone
 
 `bb({mouth:"normal", eyes:"narrow"})`
 
-b: Your phone was giving you a panic attack!
+b: A telefonod pánikrohamot okoz!
 
 `bb({eyes:"anger"})`
 
-b: Zuckerberg and Co are hijacking your mental health for venture capitalist money!
+b: Zuckerberg és Társa átveszi az irányítást a mentális egészséged felett kapitalista pénzért!
 
 ```
 bb({body:"fear", eyes:"fear"});
@@ -1610,7 +1610,7 @@ hong({body:"3_defeated2"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Punish your phone! Destroy it! Kill it!
+b: Büntesd meg a telefont! Pusztítsd el! Öld meg!
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 2.5;
@@ -1619,7 +1619,7 @@ hong({body:"3_defeated3"});
 _.act1_ending = "fight";
 ```
 
-b: KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL I--
+b: ÖLD MEG ÖLD MEG ÖLD MEG ÖLD MEG ÖLD MEG ÖLD MEG ÖLD MEG ÖLD MEG ÖLD MEG ÖLD MEG ÖLD MEG ÖLD MEG ÖLD MEG ÖLD MEG --
 
 (#act1j)
 
@@ -1627,7 +1627,7 @@ b: KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL IT KILL 
 
 `bb({eyes:"fear", mouth:"normal"})`
 
-b: The whole world is filled with danger!
+b: Az egész világ tele van veszéllyel!
 
 ```
 bb({body:"fear"});
@@ -1635,7 +1635,7 @@ hong({body:"3_defeated2"});
 Game.OVERRIDE_TEXT_SPEED = 1.5;
 ```
 
-b: Do like the armadillo! Curl up into a ball for self-defense!
+b: Tégy úgy, mint egy kis tatu! Gömbölyödj labdává a jobb védelemért!
 
 ```
 Game.OVERRIDE_TEXT_SPEED = 2.5;
@@ -1644,7 +1644,7 @@ hong({body:"3_defeated3"});
 _.act1_ending = "flight";
 ```
 
-b: CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CRY CURL UP AND CR-- 
+b: GÖMBÖLYÖDJ ÖSSZE GÖMBÖLYÖDJ ÖSSZE GÖMBÖLYÖDJ ÖSSZE GÖMBÖLYÖDJ ÖSSZE GÖMBÖLYÖDJ ÖSSZE GÖMBÖLYÖDJ ÖSSZE -- 
 
 (#act1j)
 
