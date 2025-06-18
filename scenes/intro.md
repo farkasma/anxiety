@@ -92,7 +92,7 @@ _.PLAYED_BEFORE = !!window.localStorage.continueChapter;
 
 `clearText()`
 
-n3: Üdv! Ez nem annyira egy "Játék", sokkal inkább egy interaktív történet. Remélem szeretsz olvasni, öcsi!
+n3: Üdv! Ez nem annyira egy "játék", sokkal inkább egy interaktív történet. Remélem szeretsz olvasni, öcsi!
 
 n3: Mielőtt belevágunk, *te* hogyan szeretnél olvasni?
 
