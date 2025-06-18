@@ -141,7 +141,7 @@ b: És aztán mi--
 
 `bb({body:"panic"})`
 
-b: MEGHALUUUUUUUUUUUUUNK
+b: MEGHALUUUUUUUUUUUNK
 
 ```
 bb({body:"normal", mouth:"normal", eyes:"normal"});
